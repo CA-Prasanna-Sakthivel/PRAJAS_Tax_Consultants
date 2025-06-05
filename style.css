@@ -55,81 +55,97 @@ footer {
   border-radius: 6px;
   font-weight: bold;
 }
-/* Basic Reset & Flex Layout for Sticky Footer */
-html, body {
-  height: 100%;
+/* Global Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flex Layout for Sticky Footer */
+html, body {
+  height: 100%;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden; /* 🔥 THIS FIXES THE OVERFLOW */
 }
 
-/* Ensure main grows to fill space */
+/* Main Content */
 main {
   flex: 1;
   padding: 1rem;
   text-align: center;
 }
 
-/* Header Layout */
+/* Header */
 header {
   background-color: #0c1e3a;
   color: white;
   padding: 1rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+/* Logo container */
 .logo-container {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .logo-container img {
   height: 50px;
   width: auto;
+  max-width: 100%;
 }
 
+/* Navigation Menu */
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  white-space: nowrap;
 }
 
-/* Responsive Footer */
+/* Footer */
 footer {
   background-color: #0c1e3a;
   color: white;
   text-align: center;
   padding: 1rem 0;
+  width: 100%;
 }
 
-/* 🔥 RESPONSIVE DESIGN FOR MOBILE PHONES */
+/* 🔥 Responsive Design */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-  }
-
-  .logo-container {
-    flex-direction: column;
   }
 
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   main h2 {
