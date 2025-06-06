@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services - PRAJAS Tax Consultants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services | PRAJAS Tax Consultants</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .services-container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .services-container h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #0c1e3a;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    }
+
+    .service-card img {
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      color: #0c1e3a;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    .service-card a {
+      text-decoration: none;
+      color: white;
+      background-color: #0c1e3a;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,18 +77,46 @@
     </nav>
   </header>
 
-  <main class="hero">
-    <h2>Our Services</h2>
-    <ul style="text-align:left; max-width: 700px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
-      <li>Income Tax Filing for Individuals, Businesses & Professionals</li>
-      <li>GST Registration, Filing & Compliance</li>
-      <li>TDS Return Filing & Compliance</li>
-      <li>Business Registration & Setup Support</li>
-      <li>PAN / TAN Application Assistance</li>
-      <li>Tax Planning & Consultation</li>
-      <li>Accounting Services & Bookkeeping</li>
-      <li>ROC and Other Regulatory Compliances</li>
-    </ul>
+  <main class="services-container">
+    <h2>Our Professional Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="assets/income-tax.png" alt="Income Tax Icon" />
+        <h3>Income Tax Filing</h3>
+        <p>Expert assistance in filing and planning income tax returns for individuals and businesses.</p>
+        <a href="services/income-tax.html">View More</a>
+      </div>
+      <div class="service-card">
+        <img src="assets/gst.png" alt="GST Icon" />
+        <h3>GST Services</h3>
+        <p>Registration, returns, reconciliation, and consultancy for GST compliance.</p>
+        <a href="services/gst.html">View More</a>
+      </div>
+      <div class="service-card">
+        <img src="assets/accounting.png" alt="Accounting Icon" />
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Accurate maintenance of books and financial records as per legal standards.</p>
+        <a href="services/accounting.html">View More</a>
+      </div>
+      <div class="service-card">
+        <img src="assets/tds.png" alt="TDS Icon" />
+        <h3>TDS Compliance</h3>
+        <p>End-to-end TDS deduction, payment, filing, and certificate generation services.</p>
+        <a href="services/tds.html">View More</a>
+      </div>
+      <div class="service-card">
+        <img src="assets/audit.png" alt="Audit Icon" />
+        <h3>Audit Support</h3>
+        <p>Preparation, guidance, and representation during internal and statutory audits.</p>
+        <a href="services/audit.html">View More</a>
+      </div>
+      <div class="service-card">
+        <img src="assets/roc.png" alt="ROC Icon" />
+        <h3>ROC & MCA Filings</h3>
+        <p>Company annual returns, board resolutions, director changes, and MCA compliance filings.</p>
+        <a href="services/roc.html">View More</a>
+      </div>
+    </div>
   </main>
 
   <footer>
