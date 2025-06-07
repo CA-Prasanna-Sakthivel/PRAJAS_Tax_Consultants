@@ -102,3 +102,11 @@ footer {
     gap: 1.5rem;
   }
 }
+.service-section ul,
+.service-section ol {
+  text-align: left;
+  margin: 1rem auto;
+  max-width: 600px;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
